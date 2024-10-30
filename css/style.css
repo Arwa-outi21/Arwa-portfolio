@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", system-ui;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 ul {
@@ -85,7 +90,13 @@ h2 {
     padding: 20px;
     border-bottom: 1px dashed #1f1f1f;
     text-align: center;
-    
+
+}
+
+@media (max-width: 537px) {
+    h2 {
+        font-size: 20px;
+    }
 }
 
 .about p {
@@ -103,17 +114,23 @@ h2 {
 }
 
 .skills .my-skills {
+    margin: 80px 0px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px 0px;
 }
 
 .skills .skill {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 150px;
+    flex-direction: column;
+    padding: 20px 10px;
+    margin: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0px 0px 10px black;
 }
 
 .skills .skill:last-child {
@@ -121,8 +138,8 @@ h2 {
 }
 
 .skills .skill .img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 
@@ -133,6 +150,8 @@ h2 {
 
 .skills .skill .content p {
     margin-top: 15px;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 /* Projects */
@@ -146,10 +165,9 @@ h2 {
 }
 
 .projects-section .projects {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-
+    align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -162,7 +180,7 @@ h2 {
     transition: all .5s ease;
 }
 
-.projects-section .projects .project  img {
+.projects-section .projects .project img {
     width: 100%;
     border-radius: 20px;
 }
@@ -221,6 +239,20 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.contact .contacts div {
+    margin: 10px;
+}
+
+@media (max-width: 537px) {
+    .contact .contacts div {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .contact .contacts div:last-child {
+        border-bottom: none;
+    }
 }
 
 .contact .contacts div span {
