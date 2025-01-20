@@ -241,10 +241,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.contact .contacts div {
-    margin: 10px;
-}
-
 @media (max-width: 537px) {
     .contact .contacts div {
         border-bottom: 1px solid #ddd;
