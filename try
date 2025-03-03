@@ -1,0 +1,140 @@
+    <!-- <section class="projects-section" id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="container">
+            <div class="projects row">
+                <div class="project col-4">
+                    <a href="#">
+                        <img src="img/project-1.PNG" alt="project">
+
+                        <div class="decription">
+                            <h3>Responsive Onlne Store</h3>
+                            <h5>Deliver</h5>
+                            <a href="https://arwa-outi21.github.io/deliver-online-store/" class="btn">View On Github</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project col-4">
+                    <a href="#">
+                        <img src="img/project-2.PNG" alt="project">
+
+                        <div class="decription">
+                            <h3>To Do List Add & Remove tasks</h3>
+                            <h5>To Do</h5>
+                            <a href="https://arwa-outi21.github.io/To-Do-List/" class="btn">View Project</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project col-4">
+                    <a href="#">
+                        <img src="img/project-3.PNG" alt="project">
+
+                        <div class="decription">
+                            <h3>Calculate Age time...</h3>
+                            <h5>Calulate</h5>
+                            <a href="https://arwa-outi21.github.io/calculate/" class="btn">View Project</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project col-4">
+                    <a href="#">
+                        <img src="img/project-4.PNG" alt="project">
+
+                        <div class="decription">
+                            <h3>Music Player</h3>
+                            <h5>Music</h5>
+                            <a href="https://arwa-outi21.github.io/Music-Player/" class="btn">View Project</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project col-4">
+                    <a href="#">
+                        <img src="img/project-5.PNG" alt="project">
+
+                        <div class="decription">
+                            <h3>aniwatch Website</h3>
+                            <h5>home page</h5>
+                            <a href=" https://arwa-outi21.github.io/aniwatch/" class="btn">View Project</a>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    .projects-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 90px;
+    }
+    
+    .projects-section .projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .projects-section .projects .project {
+        width: 500px;
+        position: relative;
+        overflow: hidden;
+        margin: 20px;
+        transition: all .5s ease;
+    }
+    
+    .projects-section .projects .project img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .projects-section .projects .project .decription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.822);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        transition: all .5s ease;
+    }
+    
+    
+    .projects-section .projects .project:hover .decription {
+        transform: translateY(0%);
+    }
+    
+    
+    .projects-section .projects .project .decription h3 {
+        color: #ffffff;
+    }
+    
+    .projects-section .projects .project .decription h5 {
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .projects-section .projects .project .decription .btn {
+        display: inline-block;
+        background-color: #ff1d68;
+        color: #ffffff;
+        transition: all .5s ease;
+    }
+    
+    .projects-section .projects .project .decription .btn:hover {
+        background-color: #e2004b;
+    }

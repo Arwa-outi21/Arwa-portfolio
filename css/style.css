@@ -90,7 +90,6 @@ h2 {
     padding: 20px;
     border-bottom: 1px dashed #1f1f1f;
     text-align: center;
-
 }
 
 @media (max-width: 537px) {
@@ -165,69 +164,18 @@ h2 {
 }
 
 .projects-section .projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 80px auto;
 }
 
-.projects-section .projects .project {
-    width: 500px;
-    position: relative;
-    overflow: hidden;
-    margin: 20px;
-    transition: all .5s ease;
+.projects-section .custom-card {
+    margin-bottom: 15px;
 }
 
-.projects-section .projects .project img {
-    width: 100%;
-    border-radius: 20px;
+.projects-section .custom-card p {
+    
 }
 
-.projects-section .projects .project .decription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.822);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: all .5s ease;
-}
-
-
-.projects-section .projects .project:hover .decription {
-    transform: translateY(0%);
-}
-
-
-.projects-section .projects .project .decription h3 {
-    color: #ffffff;
-}
-
-.projects-section .projects .project .decription h5 {
-    text-align: center;
-    color: #ffffff;
-}
-
-.projects-section .projects .project .decription .btn {
-    display: inline-block;
-    background-color: #ff1d68;
-    color: #ffffff;
-    transition: all .5s ease;
-}
-
-.projects-section .projects .project .decription .btn:hover {
-    background-color: #e2004b;
-}
-
-/* COnatct me */
+/* Conatct me */
 
 .contact {
     text-align: center;
